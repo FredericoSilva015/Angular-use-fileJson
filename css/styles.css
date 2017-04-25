@@ -1,0 +1,19 @@
+h1 {
+    font-size: 30px;
+    color: #7d378b;
+    font-family: 'Lato', sans-serif;
+}
+
+h2 {
+    font-size: 16px;
+    color: #7d378b;
+    /*verdana is payed font, no can do*/
+    font-family: 'Lato', sans-serif;
+}
+
+h4 {
+    font-size: 26px;
+    color: #666;
+    /*no description on that lato, i defaulted to first*/
+    font-family: 'Lato', sans-serif;
+}

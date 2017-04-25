@@ -1,0 +1,38 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <meta charset="utf-8">
+    <title>Angular Training</title>
+    <meta name="description" content="Angular Training">
+    <meta name="author" content="Fredsite">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body ng-app="app" ng-controller="myCtrl">
+    <header>
+    </header>
+    <section>
+        <h1>{{data.content.terms.heading}}</h1>
+        <h4>{{data.content.terms.intro_content}}</h4>
+        <h4>{{data.content.terms.date}}</h4>
+        <p ng-repeat="subcontent in data.content.terms.subcontent" ng-bind-html="subcontent">{{subcontent}}</p>
+        <div ng-repeat="paragraphs in data.content.terms.paragraphs">
+            <h2>{{paragraphs.heading}}</h2>
+            <ul>
+                <li ng-repeat="content in paragraphs.content">{{ content | check}}</li>
+
+            </ul>
+        </div>
+    </section>
+    <section>
+    </section>
+    <footer></footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-sanitize.js"></script>
+    <script src="js/solutionController.js"></script>
+</body>
+
+</html>
