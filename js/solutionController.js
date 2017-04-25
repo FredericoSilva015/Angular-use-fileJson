@@ -33,4 +33,4 @@ app.controller('myCtrl', function($scope, terms) {
     $scope.data = terms;
     var use = $scope.data;
     console.log($scope.data);
-});;
+});

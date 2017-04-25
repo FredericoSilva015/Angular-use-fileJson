@@ -25,6 +25,9 @@
                 <li ng-repeat="content in paragraphs.content">{{ content | check}}</li>
 
             </ul>
+            <p ng-bind-html="paragraphs.content_simple">{{paragraphs.content_simple}}</p>
+            <p ng-bind-html="paragraphs.content_contact">{{paragraphs.content_contact}}</p>
+            <p ng-bind-html="paragraphs.content_second_contact">{{paragraphs.content_second_contact}}</p>
         </div>
     </section>
     <section>
