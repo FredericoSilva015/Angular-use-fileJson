@@ -23,9 +23,9 @@ app.filter('check', ['$sce', function($sce) {
                 nested += '</ul>';
             }
 
-            return $sce.trustAsHtml(nested);
+            return nested;
         }
-        return $sce.trustAsHtml(obj);
+        return obj;
     };
 }]);
 

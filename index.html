@@ -22,7 +22,7 @@
         <div ng-repeat="paragraphs in data.content.terms.paragraphs">
             <h2>{{paragraphs.heading}}</h2>
             <ul>
-                <li ng-repeat="content in paragraphs.content">{{ content | check}}</li>
+                <li ng-repeat="content in paragraphs.content" ng-bind-html="content | check">{{ content | check}}</li>
 
             </ul>
             <p ng-bind-html="paragraphs.content_simple">{{paragraphs.content_simple}}</p>
